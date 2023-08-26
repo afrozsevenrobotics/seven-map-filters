@@ -1,0 +1,7 @@
+<class_libraries>
+  <library path="liblayers"> 
+    <class type="seven_map_filters::MapFilterRectangle"  base_class_type="costmap_2d::Layer">
+      <description>Inflates obstacles to speed collision checking and to make robot prefer to stay away from obstacles.</description>
+    </class>
+  </library>
+</class_libraries>

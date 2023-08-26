@@ -15,6 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
   tf2_geometry_msgs
   tf2_msgs
   tf2_ros
+  pluginlib
 )
 
 ## System dependencies are found with CMake's conventions
@@ -109,7 +110,12 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES seven-map-filters
-#  CATKIN_DEPENDS costmap_2d roscpp rospy tf2 tf2_geometry_msgs
+ CATKIN_DEPENDS 
+    costmap_2d 
+    roscpp rospy 
+    tf2 
+    tf2_geometry_msgs
+    pluginlib
  DEPENDS 
 #  system_lib  
  tf2
